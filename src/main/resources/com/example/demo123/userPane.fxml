@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo123.UserPaneController">
+    <children>
+        <Pane layoutX="-2.0" layoutY="-5.0" prefHeight="451.0" prefWidth="644.0" style="-fx-background-color: #40E0D0;">
+            <children>
+                <TableView fx:id="service" layoutY="3.0" prefHeight="451.0" prefWidth="463.0">
+                    <columns>
+                        <TableColumn fx:id="model" prefWidth="89.60003507137299" text="Модель" />
+                        <TableColumn fx:id="info" prefWidth="371.79998779296875" text="Описание" />
+                    </columns>
+                </TableView>
+                <TextField fx:id="search" layoutX="473.0" layoutY="25.0" />
+                <Button fx:id="searchBut" layoutX="478.0" layoutY="73.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="138.0" text="Поиск" />
+                <Button fx:id="refresh" layoutX="478.0" layoutY="143.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="138.0" text="Обновить" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
